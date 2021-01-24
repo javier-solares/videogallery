@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VIDEO GALLERY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="continer">
+        <div class="heading">Video gallery</div>
+        <div class="video-continer">
+            <div class="video">
+                <video src="video/c2.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/c18.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v1.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v2.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v6.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v7.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v8.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v9.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v10.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v11.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v12.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v13.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v14.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v15.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v16.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v17.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v18.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v19.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v20.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v21.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v22.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v23.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v24.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v25.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v26.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v27.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v28.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v29.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v30.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v31.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v32.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v33.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v34.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v35.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v36.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v37.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v38.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/v39.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/va.mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/vg (2).mp4" preload="preload"></video>
+            </div>
+            <div class="video">
+                <video src="video/vi.mp4" preload="preload"></video>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var video = document.querySelectorAll('video')
+
+        video.forEach(play => play.addEventListener('click', () => {
+
+            play.classList.toggle('active');
+
+            if (play.paused) {
+                play.play();
+            } else {
+                play.pause();
+                play.currentTime = 0;
+            }
+        }));
+    </script>
+
+</body>
+
+</html>

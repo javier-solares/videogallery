@@ -1,0 +1,81 @@
+:root {
+    --purple: #0adefa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.continer .heading {
+    font-size: 5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: var(--purple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+.continer .heading:hover {
+    color: rgb(247, 6, 6);
+}
+
+.video-continer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-continer .video {
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.video-continer .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.video-continer .video video:hover {
+    transition: .2s linear;
+    transform: scale(1.3);
+}
+
+.video-continer .video .active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    object-fit: fill;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 0 0 100vh rgb(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.video-continer .video .active:hover {
+    transition: none;
+    transform: translate(-50%, -50%) scale(1);
+}
